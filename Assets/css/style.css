@@ -354,5 +354,14 @@ Changes in css when the screen width is 500px or smaller  */
         margin-left: 0;
     }
 
+    .contactlinks ul li{
+    
+        margin-left: 10px;
+        
+    }
+
+    .contactlinks ul li a{
+        font-size: 15px;
+    }
 
   }
