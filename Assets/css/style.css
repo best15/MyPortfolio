@@ -73,7 +73,7 @@ nav a{
 .subtitle{
     position: absolute;
     right: 100px;
-    top: 325px;
+    top: 225px;
     color: white;
     background-color:var(--themecolor);
     padding: 10px;
@@ -82,8 +82,8 @@ nav a{
 
 /* Set the width and height of the main image */
 .hero > img{
-    width:100%;
-    height: 400px;
+    width:100%; 
+    height: 300px;
 
 }
 
