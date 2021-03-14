@@ -1,0 +1,358 @@
+
+/* Using universal seletctor */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Varible declaration for re-use purposes */
+:root{
+    --themecolor: chocolate;
+    --HeaderFooter: rgb(39, 38, 38);
+    --H1Fontsize: 32px;
+}
+
+/* sets the background color of whole page */
+body{
+    background-color: rgb(208, 228, 226);
+}
+
+/* set the padding and background color of the header */
+header{
+    padding-bottom: 20px;
+    background-color: var(--HeaderFooter);
+
+
+}
+
+/* css for the title header */
+header > h1{
+    display: inline-block;
+    text-align: right;
+    font-size: var(--H1Fontsize);
+    color: white;
+    background-color: var(--themecolor);
+    padding: 10px;
+    margin-top: 19px;
+    width: 35%;
+    text-transform: uppercase;
+}
+
+/* Sets navigation bar at the header with padding,margin,font and float to right */
+nav{
+    padding-top: 20px;
+    margin-right: 20px;
+    float: right;
+    font-family: sans-serif ,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Sets the link items in the list as inline-block to align them horizontally provided with some margin , padding and border */
+nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+    padding: 3px;
+    border-bottom: 2px var(--themecolor) solid;
+}
+
+/* sets the size color and removing underline decoration in nav links */
+nav a{
+    font-size: 20px;
+    color: var(--themecolor);
+    text-decoration: none;
+}
+
+/* Set the position of the box holding the cover image */
+.hero{
+    position: relative;
+}
+
+/* Positioning the text box inside cover image box */
+.subtitle{
+    position: absolute;
+    right: 100px;
+    top: 325px;
+    color: white;
+    background-color:var(--themecolor);
+    padding: 10px;
+}
+
+
+/* Set the width and height of the main image */
+.hero > img{
+    width:100%;
+    height: 400px;
+
+}
+
+
+/* Sets display flex and width height and margin of the article box */
+.ArticleTitle{
+    
+    display: flex;
+    width: 100%;
+    max-height: 50%;
+    margin-top: 30px;    
+
+}
+
+/* sets the border and width of the element box that contains the h1 element inside 
+ eg AboutMe, Work and ContactMe */
+.Article-h1{
+    
+    border-right: 4px solid var(--themecolor);
+    width: 25%;
+
+
+}
+
+/* sets the alignment, font and margin for h1 element inside the article element */
+.ArticleTitle h1{
+    text-align: right;
+    font-size: var(--H1Fontsize);
+    margin-right: 15px;
+}
+
+
+/* set the padding and width of the  element containinig paragraph element in article box */
+.P-aboutMe{
+    padding-right: 50px;
+    padding-left: 25px;
+    width: 75%;
+}
+
+/* sets the line height of paragraph  */
+.ArticleTitle p{
+    line-height: 1.5;
+}
+
+/* sets the width of the project section */
+.projects {
+    
+    width: 75%;
+}
+
+/* sets the position, margin and opacity of the first work image */
+.Project1{
+    position: relative;
+    margin: 10px 50px 10px 25px;
+    opacity: 0.8;
+
+}
+
+/* sets the height ,width and border of the first work image */
+#work1screenshot{
+    width: 100%;
+    height: 400px;
+    border: 4px var(--themecolor) solid;
+    
+}
+
+/* sets the height,width and border of all the other work images except work one */
+#workscreenshot{
+    width: 100%;
+    height: 200px;
+    border: 4px var(--themecolor) solid;
+    
+}
+
+/* sets the css for the work title/description box to render it insided the work images */
+.workDescr{
+    position: absolute;
+    bottom: 50px;
+    background-color:var(--themecolor);
+    color: white;
+    padding: 5px;
+    width: fit-content;
+   
+}
+
+/* sets the position,disply ,width ,margin and opacity for work second and work fourth box elements */
+.work2-4{
+    position: relative;
+    /* margin-left: 25px; */
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* sets the position,disply ,width ,margin and opacity for work third and work fifth box elements */
+.work3-5{
+    position: relative;
+    margin-left: 1%;
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+/* sets padding for the box element that contains work 2 and 3 */
+.Projects2-3{
+    margin: 10px 50px 10px 25px;
+}
+
+/* sets padding for the box element that contains work 4 and 5 */
+.Projects4-5{
+    margin: 10px 50px 10px 25px;
+}
+
+/* sets the width to 75% of the box that contains the contact links */
+.contactlinks{
+    width: 75%;
+}
+
+/* sets the display flex and jusitification padding and list-style of the list items inside unordered list elemet */
+.contactlinks ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 20px;
+}
+
+/* sets the border bottom of the list items inside unordered list items */
+.contactlinks ul li{
+   border-bottom: 4px solid var(--themecolor);
+}
+
+/* sets the text-decoration and font-size of links insided list items */
+.contactlinks a{
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+/* sets the hover class for all the work images,so the opacity becomes 1 when hover over each work images box */
+.Project1:hover,.work2-4:hover,.work3-5:hover {
+opacity: 1;
+}
+
+
+/* sets the footer of the page */
+footer {
+    margin-top: 15px;
+    padding: 30px;
+    text-align: center;
+    background-color: var(--HeaderFooter);
+    color: white;
+}
+
+
+/* ---Responsive----
+Changes in css while the screen width is reduced to 900px or smaller  */
+@media only screen and (max-width: 900px) {
+
+  header > h1{
+      
+      margin-top: 0px;
+      margin-left: 32%;
+      width: 32%;
+      text-align: center;
+      padding: 5px;
+  }
+
+  header{
+      display: flex;
+      flex-direction: column;
+
+  }
+
+  nav{
+      margin-right: 0;
+      display: flex;
+      justify-content: center;
+
+  }
+  
+  .ArticleTitle{
+      flex-direction: column;
+  }
+
+  .Article-h1{
+    width: 100%;
+    border-right: none;
+    border-bottom: 4px solid var(--themecolor);
+  }
+
+  .ArticleTitle h1{
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .P-aboutMe{
+      width: 100%;
+      padding: 10px;
+  }
+
+  
+
+.projects{
+    width: 100%;
+}
+
+.Project1{
+    margin: 10px;
+}
+
+.Projects2-3{
+    margin: 10px;
+}
+
+.Projects4-5{
+    margin: 10px;
+}
+
+
+.contactlinks {
+    width: 100%;
+}
+
+
+}
+
+/* ---Responsive---
+Changes in css when the screen width is 500px or smaller  */
+@media only screen and (max-width: 500px) {
+
+    header > h1{
+       width: 45%;
+    }
+    
+    nav ul{
+      
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav ul li{
+        border: none;
+  
+    }
+
+    nav ul li a{
+        font-weight: 900;
+    }
+
+    #work2 {
+        width: 100%;
+      
+    }
+    #work3 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    #work4 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #work5 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+  }
