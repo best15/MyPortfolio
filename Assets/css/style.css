@@ -9,6 +9,7 @@
 
 /* Varible declaration for re-use purposes */
 :root{
+    --bordercolor: rgb(143, 80, 34);
     --themecolor: chocolate;
     --HeaderFooter: rgb(39, 38, 38);
     --H1Fontsize: 32px;
@@ -17,6 +18,7 @@
 /* sets the background color of whole page */
 body{
     background-color: rgb(208, 228, 226);
+                  
 }
 
 /* set the padding and background color of the header */
@@ -36,16 +38,15 @@ header > h1{
     background-color: var(--themecolor);
     padding: 10px;
     margin-top: 19px;
-    width: 35%;
+    width: 400px;
     text-transform: uppercase;
 }
 
-/* Sets navigation bar at the header with padding,margin,font and float to right */
+/* Sets navigation bar at the header with padding,margin,font-size and float to right */
 nav{
     padding-top: 20px;
     margin-right: 20px;
     float: right;
-    font-family: sans-serif ,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
@@ -54,13 +55,13 @@ nav ul li{
     display: inline-block;
     margin-right: 15px;
     padding: 3px;
-    border-bottom: 2px var(--themecolor) solid;
+    border-bottom: 2px var(--bordercolor) solid;
 }
 
 /* sets the size color and removing underline decoration in nav links */
 nav a{
     font-size: 20px;
-    color: var(--themecolor);
+    color: white;
     text-decoration: none;
 }
 
@@ -102,8 +103,9 @@ nav a{
  eg AboutMe, Work and ContactMe */
 .Article-h1{
     
-    border-right: 4px solid var(--themecolor);
+    border-right: 4px solid var(--bordercolor);
     width: 25%;
+    color: var(--themecolor);
 
 
 }
@@ -215,13 +217,14 @@ nav a{
 
 /* sets the border bottom of the list items inside unordered list items */
 .contactlinks ul li{
-   border-bottom: 4px solid var(--themecolor);
+   border-bottom: 4px solid var(--bordercolor);
 }
 
 /* sets the text-decoration and font-size of links insided list items */
 .contactlinks a{
     text-decoration: none;
     font-size: 20px;
+    color: var(--themecolor);
     
 }
 
