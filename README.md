@@ -5,6 +5,10 @@
 
 Deploy Link:  https://best15.github.io/my-portfolio/
 
- ![portfolio image](./Images/coverimage.jpg)
+ ![portfolio image](./Images/Portfolio.jpg)
+
+Responsive image for screen <= 900px
  ![portfolio image](./Images/portfolioresponsive1.jpg)
+
+Responsive image for screen <=500px
  ![portfolio image](./Images/portfolioresponsive2.jpg)
