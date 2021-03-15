@@ -6,3 +6,5 @@
 Deploy Link:  https://best15.github.io/my-portfolio/
 
  ![portfolio image](./Images/Portfolio.jpg)
+ ![portfolio image](./Images/portfolioresponsive1.jpg)
+ ![portfolio image](./Images/portfolioresponsive2.jpg)
